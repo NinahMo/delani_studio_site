@@ -7,12 +7,17 @@
   </head>
   <body>
    <div class="container">
-    <div class="jumbotron">
-     <h1>Akan Names</h1>
-     <p> This web application is for determining your Akan Name simply by taking in your birthday credentials and your gender then it calculates the week you were born and the exact day . Afterwhich it generates your Akan Name which you will see after submitting your credentials.</p>
-     <p> Below are some of the Akan Ghanian Names:</p>
-     <h2>Female Names</h2>
-    <ul>
+    <div class="row">
+     <div class="col-md-2">...</div>
+      <div class="jumbotron">
+       <h1>Akan Names</h1>
+       <p> This web application is for determining your Akan Name simply by taking in your birthday credentials and your gender then it calculates the week you were born and the exact day . Afterwhich it generates your Akan Name which you will see after submitting your credentials.</p>
+       <p> Below are some of the Akan Ghanian Names:</p>
+    </div>
+    <div class="card">
+     <div class="card-body">
+      <h2>Female Names</h2>
+     <ul>
       <li>Sunday: Akosua</li>
 			<li>Monday: Adwoa</li>
 			<li>Tuesday: Abenaa</li>
@@ -20,9 +25,9 @@
 			<li>Thursday:  Yaa</li>
 			<li>Friday: Afua</li>
 			<li>Saturday: Ama</li>
-    </ul>
-     <h3>Male Names</h3>
-    <ul>
+     </ul>
+      <h3>Male Names</h3>
+     <ul>
       <li>Sunday: Kwasi</li>
 			<li>Monday: Kwadwo</li>
 			<li>Tuesday: Kwabena</li>
@@ -30,7 +35,7 @@
 			<li>Thursday:  Yaw</li>
 			<li>Friday: Kofi</li>
 			<li>Saturday: Kwame</li>
-    </ul>
+     </ul>
     </div>
     <form id="Birthday" method="post"
      <div class="input-container">
@@ -47,9 +52,10 @@
       </select>
       <center>
         <button type="submit" class="btn" name="button">Submit</button>
-      </center>
-    </form>
-    <center><p id="Name"></p></center>
+       </center>
+     </form>
+     <center><p id="Name"></p></center>
+    </div>
    </div>
   </body>
 </html>
