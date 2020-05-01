@@ -10,16 +10,23 @@
     <div class="jumbotron">
      <h1>Akan Names</h1>
      <p> This web application is for determining your Akan Name simply by taking in your birthday credentials and your gender then it calculates the week you were born and the exact day . Afterwhich it generates your Akan Name which you will see after submitting your credentials.</p>
+     <p> Below are some of the Akan Ghanian Names:</p>
     </div>
     <form id="Birthday" method="post"
+     <div class="input-container">
+      <i class="fa fa-calendar-alt icon"></i>
+      <input class="input-field" placeholder="dd/mm/yyyy" id="myBirthDate" class="form-control" type="text" name="" value="">
       <label>Birthday Date</label>
-      <input type="text" name="" value="">
+     </div>
+     <div class="input-container"
+      <i class="fa fa-venus-mars icon"></i>
       <select class="form-control" name="" id="Gender">
         <option value="Male">Male</option>
         <option value="Female">Female</option>
+     </div>
       </select>
       <center>
-        <button type="submit" name="button">Submit</button>
+        <button type="submit" class="btn" name="button">Submit</button>
       </center>
     </form>
     <center><p id="Name"></p></center>
