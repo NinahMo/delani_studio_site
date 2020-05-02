@@ -6,10 +6,10 @@ h1 {
   color: brown;
   text-align: center;
 }
-h2 {
+h2, h3{
   color: green;
   font-style: italic;
-  text-align: csnter;
+  text-align: center;
 }
 .author {
   color: green;
@@ -20,6 +20,9 @@ ul {
 @media screen and (min-width: 480px) {
   body {
     background-color: orange;
-    color: white;
+    color: black;
   }
+}
+.text-right {
+  text-align: right;
 }
