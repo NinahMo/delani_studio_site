@@ -2,14 +2,24 @@
 @import url('font-awesome.css');
 
 
+title {
+  text-align: center;
+  text-decoration: underline;
+}
+.brown-text-shadow {
+  text-shadow: brown 0 -2px;
+}
 h1 {
   color: brown;
   text-align: center;
 }
-h2, h3{
+h2, h3 {
   color: green;
   font-style: italic;
   text-align: center;
+}
+body {
+  background-image: url(images/Ghanian.png)
 }
 .author {
   color: green;
