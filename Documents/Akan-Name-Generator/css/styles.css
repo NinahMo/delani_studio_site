@@ -1,0 +1,22 @@
+@import url('bootstrap.min.css');
+@import url('font-awesome.css');
+
+
+h1 {
+  color: brown;
+  text-align: center;
+}
+h2 {
+  color: green;
+  font-style: italic;
+  text-align: csnter;
+}
+h3 span label.fancify {
+  font-size: 1.5cm;
+  font-weight: 800;
+  font-family: consolas, "segoe UI", calibri, san-sans-serif;
+  font-style: italic;
+}
+ul {
+  line-height: 40px;
+}
