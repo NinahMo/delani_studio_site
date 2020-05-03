@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8"
-    <title class="brown-text-shadow">Akan Name Generator></title>
+    <meta charset="utf-8">
+    <title class="brown-text-shadow"><strong>Akan Name Generator></strong></title>
     <link href="css/css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
   </head>
@@ -11,14 +11,14 @@
     <div class="row">
      <div class="col-md-6 offset-md-6">...</div>
       <div class="jumbotron">
-       <h1>Akan Names</h1>
+       <h1><strong>Akan Name Generator</strong></h1>
        <p> This web application is for determining your Akan Name simply by taking in your birthday credentials and your gender then it calculates the week you were born and the exact day . Afterwhich it generates your Akan Name which you will see after submitting your credentials.</p>
        <p> Below are some of the Akan Ghanian Names:</p>
     </div>
     <div class="col-md-6 offset-md-6">...</div>
     <div class="card">
      <div class="card-body">
-      <h2>Female Names</h2>
+      <h2>FEMALE</h2>
      <ul>
       <li>Sunday: Akosua</li>
 			<li>Monday: Adwoa</li>
@@ -33,7 +33,7 @@
    <div class="card">
     <div class="card-body">
      <div id="first">
-      <h3 class="author">Male Names</h3>
+      <h3 class="author">MALE</h3>
      </div>
      <ul>
       <li>Sunday: Kwasi</li>
@@ -47,24 +47,46 @@
     </div>
    </div>
   </div>
-  <div class="col-md-12 offset-md-12">...</div>
+  <div class="col-md-4 offset-md-12">...</div>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-3 offset-md-1">
+     <div class="col-md-6 mt30 akan-form">
     <form id="Birthday" method="post"
      <div class="input-container">
       <i class="fa fa-calendar-alt icon"></i>
-      <input class="input-field" placeholder="dd/mm/yyyy" id="myBirthDate" class="form-control" type="text" name="" value="">
-      <label>Birthday Date</label>
+      <label>Birthday</label>
+      <form>
+       <label for="Day">Day:</label><br>
+       <input type="text" placeholder="dd" id="Day" name="Day"><br>
+       <label for="Month">Month:</label><br>
+       <input type="text" placeholder="mm" id="Month" name="Month"><br>
+       <label for="Year">Year:</label><br>
+       <input class="input-field" type="text" placeholder="yyyy" id="Year" class="form-control" name="Year" value="">
+      </form>
+      <div class=<"input-group mb15">
+      </div>
      </div>
      <div class="input-container"
       <i class="fa fa-venus-mars icon"></i>
+      <label>Gender</label>
       <select class="form-control" name="" id="Gender">
         <option value="Male">Male</option>
         <option value="Female">Female</option>
      </div>
       </select>
       <center>
-        <button type="submit" class="btn" name="button">Submit</button>
+        <div class="col-md-12 offset-md-12">
+        <button type="submit" class="btn btn-primary" <i class="fa fa-search" name="button">Generate</i></button>
+        <button type="button" class="btn btn-primary" <i class="fa fa-times" name="button">Clear</i></button>
        </center>
+      </div>
      </form>
      <center><p id="Name"></p></center>
+      </div>
+     </div>
+    </div>
+   </div>
+   <footer class="footer"><p>. &copy; 2019 All Rights Reserved. Akan Names Application.</p></footer>
   </body>
 </html>

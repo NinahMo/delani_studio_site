@@ -19,7 +19,7 @@ h2, h3 {
   text-align: center;
 }
 body {
-  background-image: url(images/Ghanian.png)
+  background-image: url(images/Akan.png)
 }
 .author {
   color: green;
@@ -36,3 +36,4 @@ ul {
 .text-right {
   text-align: right;
 }
+padding: 50%
