@@ -11,4 +11,12 @@ function(getNames){
   var year = document.getElementById("year").value;
   var male = document.getElementById("male").value;
   var female = document.getElementById("female").value;
-}
+
+  if(day <=0 || day>31){
+    alert("Invalid input")
+  }
+  else if(month <=0 || month >12){
+    alert("Invalid input")
+  }
+  if(male.selected == true)
+  else if(female.selected == true)
