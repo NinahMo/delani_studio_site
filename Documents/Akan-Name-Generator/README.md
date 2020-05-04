@@ -13,11 +13,15 @@ This web application is for determining your Akan Name simply by taking in your 
 The formula used to get your day of birth and give you your Akan Name is at odds. (bug fixing in progress)
 ## Technologies Used
 html
-CSS 
+CSS
 Javascript
 Bootstrap
 ## Support and contact details
-Your contribution to this code is highly valued . Incase you have any queries, contributions, comments or correction kindly contact me at ninahb746@gmail.com
+Your contribution to this code is highly valued . Incase you have any queries, contributions, comments or correction kindly contact me at
+ninahb746@gmail.com
+
+Link to live site https://ninahmo.github.io/Akan-Name-Generator/
+
 ### License
 MIT License
 
