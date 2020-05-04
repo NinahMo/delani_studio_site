@@ -1,42 +1,26 @@
-@import url('bootstrap.min.css');
-@import url('font-awesome.css');
-
-
-title {
-  text-align: center;
-  text-decoration: underline;
-}
-.brown-text-shadow {
-  text-shadow: brown 0 -2px;
-}
 h1 {
   color: brown;
-  text-align: center;
+  font-style: italic;
 }
+
 h2, h3 {
   color: green;
-  font-style: italic;
-  text-align: center;
 }
+
 body {
-  background-image: url(images/Akan.png)
+  background-color: orange;
+  color: black;
+  background-image: url("images/Akan.png");
 }
-.author {
-  color: green;
-}
-ul {
-  line-height: 40px;
-}
-@media screen and (min-width: 480px) {
-  body {
-    background-color: orange;
-    color: black;
-  }
-}
-.text-right {
-  text-align: right;
-}
-padding: 50%
 .float {
-  text-align: right
+  text-align: right;
+  font-weight: bolder;
+}
+.container{
+  margin-top: 100px;
+  flex-direction: column;
+  margin-bottom: 45px;
+}
+.author{
+  color: orange;
 }

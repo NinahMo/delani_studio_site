@@ -1,59 +1,66 @@
-//business logic
-$(document).ready(function()){
-  $("#Birthday").submit(function(event)){
-    event.preventDefault();
-    var Birthday=$("input#Date").val();
-    var Gender=$("select#Gender").val();
+//bus// Front-end logic
+var daysOfTheWeek= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var maleNames= ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var maleNames = ["Kwasi", "Kwadwo", "Kwabena", "KWaku", "Yaw", "Kofi", "Kwame"];
-var femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Yaa"];
+function findAkanNames(){
+    var day = parseInt(document.getElementById("day").value);
+    var month = parseInt(document.getElementById("month").value);
+    var year = parseInt(document.getElementById("year").value);
+    var male = document.getElementById("male");
+    var female = document.getElementById("female");
+    if (day <= 0 || day > 31 ){
+        alert("Invalid day!");
+    }
+     else if (month <= 0 ||  month > 12  || (month == 2 && day >29)){
+        alert("Invalid month!")
+    }
 
+    var a = Math.floor((14 - month) / 12)
+    var y = year - a
+    var m = month + 12 * a - 2
+    var d = (day + y + Math.floor(y / 4) - Math.floor(y / 100) + Math.floor(year / 400) + Math.floor((31 * m )/ 12)) % 7;
 
-//user-interface logic
-function getNames(){
-  var day = parseInt(document.getElementById("day").value);
-  var month = parseInt(document.getElementByid("month").value);
-  var year = parseInt(document.getElementById("year").value);
-  var male = parseInt(document.getElementById("male");
-  var female = parseInt(document.getElementById("female");
-
-  if(day <=0 || day >31){
-    alert("Invalid input")
-  }
-  else if(month <=0 || month >12){
-    alert("Invalid input")
-  }
-
-  var day (d) = (((CC/4) -2*CC-1) +((5*YY/4)) + ((26*(MM+1)/10)) + DD) % 7
-  var newDate = newDate(day + "/" + month + "/" + year);
-  var d = newDate.getDay()
+    if (male.checked == true){
+        alert("You were born on " + daysOfTheWeek[d] +  " and your Akan name is " + maleNames[d]);
+        console.log(daysOfTheWeek[d]);
+        console.log(maleNames[d]);
+    }
+    else if (female.checked == true){
+        alert("You were born on " + daysOfTheWeek[d] +  " and your Akan name is " + femaleNames[d]);
+        console.log(daysOfTheWeek[d]);
+        console.log(femaleNames[d]);
+    }
+     else {
+        alert("Select gender")
+    }
+}
 
   var d = new Date(Birthday);
   var dayName = days[d.getDay()];
-  var Name ="";
+  var Name =("");
 
 if(Gender == "Male") {
   switch (dayName) {
    case "Sunday" :
-    Name = MaleNames[0];
+    Name = maleNames[0];
     break;
    case "Monday" :
-    Name = MaleNames[1];
+    Name = maleNames[1];
     break;
    case "Tuesday" :
-    Name = MaleNames[2];
+    Name = maleNames[2];
     break;
    case "Wednesday" :
-    Name = MaleNames[3];
+    Name = maleNames[3];
    case "Thursday" :
-    Name = MaleNames[4];
+    Name = maleNames[4];
     break;
    case "Friday" :
-    Name = MaleNames[5];
+    Name = maleNames[5];
     break;
    case "Saturday" :
-    Name = MaleNames[6];
+    Name = maleNames[6];
     break;
     default:
   }
@@ -61,27 +68,27 @@ if(Gender == "Male") {
 else {
   switch (dayName) {
    case "Sunday" :
-    Name = FemaleNames[0];
+    Name = femaleNames[0];
     break;
    case "Monday" :
-    Name = FemaleName[1];
+    Name = femaleName[1];
     break;
-   Case "Tuesday" :
-    Name = FemaleNames[2];
+   case "Tuesday" :
+    Name = femaleNames[2];
     break;
    case "Wednesday" :
-    Name = FemaleNames[3];
+    Name = femaleNames[3];
     break;
    case "Thursday" :
-    Name = FemaleNames[4];
+    Name = femaleNames[4];
     break;
    case "Friday" :
-    Name = FemaleNames[5];
+    Name = femaleNames[5];
     break;
    case "Saturday" :
-    Name = FemaleNames[6];
+    Name = femaleNames[6];
     break;
-    default;
+    default:
   }
 }
   if(male.selected == true){
@@ -90,9 +97,3 @@ else {
   else if(female.selected == true){
     alert("You were born on" + days[d] + "and your Akan name is:" + femaleNames[d]);
   }
-}
-
- document.getElementById("name").innerHTML = "Your Akan Name is" <strong>"+Name+"</strong> "+" Because you were born on "+dayName";
-
-  });
-});
