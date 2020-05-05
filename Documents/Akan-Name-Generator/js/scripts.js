@@ -9,6 +9,7 @@ function findAkanNames(){
     var year = parseInt(document.getElementById("year").value);
     var male = document.getElementById("male");
     var female = document.getElementById("female");
+
     if (day <= 0 || day > 31 ){
         alert("Invalid day!");
     }
@@ -38,59 +39,60 @@ function findAkanNames(){
 
   var d = new Date(Birthday);
   var dayName = days[d.getDay()];
-  var Name =("");
+  var Name ="";
 
-if(Gender == "Male") {
-  switch (dayName) {
-   case "Sunday" :
-    Name = maleNames[0];
-    break;
-   case "Monday" :
-    Name = maleNames[1];
-    break;
-   case "Tuesday" :
-    Name = maleNames[2];
-    break;
-   case "Wednesday" :
-    Name = maleNames[3];
-   case "Thursday" :
-    Name = maleNames[4];
-    break;
-   case "Friday" :
-    Name = maleNames[5];
-    break;
-   case "Saturday" :
-    Name = maleNames[6];
-    break;
-    default:
+  if(Gender == "Male") {
+    switch (dayName) {
+     case "Sunday" :
+      Name = maleNames[0];
+      break;
+     case "Monday" :
+      Name = maleNames[1];
+      break;
+     case "Tuesday" :
+      Name = maleNames[2];
+      break;
+     case "Wednesday" :
+      Name = maleNames[3];
+     case "Thursday" :
+      Name = maleNames[4];
+      break;
+     case "Friday" :
+      Name = maleNames[5];
+      break;
+     case "Saturday" :
+      Name = maleNames[6];
+      break;
+      default:
+    }
   }
-}
-else {
-  switch (dayName) {
-   case "Sunday" :
-    Name = femaleNames[0];
-    break;
-   case "Monday" :
-    Name = femaleName[1];
-    break;
-   case "Tuesday" :
-    Name = femaleNames[2];
-    break;
-   case "Wednesday" :
-    Name = femaleNames[3];
-    break;
-   case "Thursday" :
-    Name = femaleNames[4];
-    break;
-   case "Friday" :
-    Name = femaleNames[5];
-    break;
-   case "Saturday" :
-    Name = femaleNames[6];
-    break;
-    default:
+  else {
+    switch (dayName) {
+     case "Sunday" :
+      Name = femaleNames[0];
+      break;
+     case "Monday" :
+      Name = femaleName[1];
+      break;
+     case "Tuesday" :
+      Name = femaleNames[2];
+      break;
+     case "Wednesday" :
+      Name = femaleNames[3];
+      break;
+     case "Thursday" :
+      Name = femaleNames[4];
+      break;
+     case "Friday" :
+      Name = femaleNames[5];
+      break;
+     case "Saturday" :
+      Name = femaleNames[6];
+      break;
+      default:
+    }
   }
-}
+
   if(male.selected == true){
     alert("You were born on" + days[d] + "and your Akan name is:" + maleNames[d]);
   }
