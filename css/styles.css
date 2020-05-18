@@ -1,0 +1,132 @@
+h2 {
+    color: whitesmoke;
+}
+h3, h4 {
+    color:wheat;
+}
+.paragraph {
+    text-align: center;
+    color: black;
+    font-weight: 200;
+    padding: 1% 4%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	height: auto;
+    background: grey;
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Croissant One';font-size: 22px;
+}
+.container{
+	margin: inherit;
+    width: inherit;
+}
+.first-text{
+	background: transparent;
+	font-weight: bold;
+    text-align: center;
+    font-size-adjust: auto;
+    font-size: 60px;
+    color: white;
+    text-emphasis:bold;
+}
+.section1{
+    background: url(assets/background/h_img.jpg) no-repeat;
+    padding: 10;
+    margin: 0;
+    background-size: cover;
+    position: relative;
+}
+.logo{
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    margin-top: 100px;
+}
+.section2{
+    background: whitesmoke;
+    height: 300px;
+}
+.second-text{
+    color: black;
+    text-align: center;
+    background: transparent;
+    font-size: medium;  
+    
+}
+.section3{
+    height: 400px;
+    background: url(assets/background/s_image.jpg) no-repeat;
+}
+.third-text{
+    text-align: center;
+    background: transparent;
+    color: white;
+}
+.fourth-text{
+    text-align: center;
+    color: black;
+    font-weight: 200;
+}
+.section4{
+    background: white;
+    height:auto;
+}
+.section5{
+    height: 800px;
+    background: url(assets/background/c_image.jpg) no-repeat;
+    font-family: 'Gloria Hallelujah';font-size: 22px;
+}
+.content {
+    color: orange;
+    text-emphasis: bold;
+    text-align: center;
+}
+.hide {
+    display: none;
+}
+.form-cont {
+    text-align: center;
+    position: relative;
+    width: 700px;
+    max-width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+}
+#portfolio img {
+    width: 100%;
+}
+.card-deck {
+    padding: 5% 1%;
+}
+.card {
+    margin: 10px 0;
+    position: relative;
+    overflow: hidden;
+}
+.card:hover img {
+    transform: scale(1.2);
+    transition: all 0.3s ease;
+}
+.card-1 {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.582);
+    cursor: pointer;
+    display: none;
+    transition: all 0.5s ease;
+    color: orange;
+}
+#inlineDesign {
+    text-align: center;
+}
+@media screen and (max-width:450px) {
+    .form-cont input {
+        width: 100%;
+        margin-top: 10px;
+    }
+} 
