@@ -5,7 +5,7 @@ $('.main').click(function () {
 
 $(".card").hover(function () {
     $(this).children(".card-1").fadeToggle(1000, "linear");
-});
+});  
 
 $("button").click(function (ninah) {
     var client = document.getElementById('nameDetail').value;
