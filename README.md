@@ -25,13 +25,13 @@ This application showcases services the studio offers and a complete description
 ## Live Site 
 Here is the link to the live site : https://ninahmo.github.io/delani_studio_site/
 ## Technologies Used
-- 'HTML'
+- HTML
 
-- 'CSS'
+- CSS
 
-- 'Bootsrap'
+- Bootsrap
 
-- 'JQuery'
+- JQuery
 
 - 'Javascript'
 ## Support and contact details
