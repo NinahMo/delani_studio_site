@@ -12,8 +12,3 @@ $("button").click(function (ninah) {
     alert(' Dear ' + 'customer' + ' your message has been received successfully.')
     ninah.preventDefault();
   });
-                   
-
-   falsevf
-
-   
